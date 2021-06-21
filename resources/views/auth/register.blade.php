@@ -4,6 +4,12 @@
             <x-jet-authentication-card-logo />
         </x-slot>
 
+        <!-- <div>
+            <img src="{{ asset('img/MEG22.png') }}" width="30%" height="30%" style="display: block;
+                margin-left: auto;
+                margin-right: auto; padding-top:70px" alt="logo" />
+        </div> -->
+
         <x-jet-validation-errors class="mb-4" />
 
         <form method="POST" action="{{ route('register') }}">
@@ -18,6 +24,12 @@
                 <x-jet-label for="email" value="{{ __('Email') }}" />
                 <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
+
+            @extends('layouts.links_phone')
+                <div class="mt-4">
+                    <x-jet-label for="Phone" value="Phone"/>
+                    <x-jet-input id="phone" class="block mt-1 w-full" type="tel" name="phone" required />
+                </div>
 
 
                 {{-- <div class="mt-4">
