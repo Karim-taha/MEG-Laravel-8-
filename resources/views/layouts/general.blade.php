@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ecobit</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="{{ asset('img/favicon.png')}}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
     <!-- animate CSS -->
@@ -27,7 +27,6 @@
 
     <link rel="stylesheet" href="{{ asset('bootstrap-rtl.css')}}">
 
-    @yield('special-header')
 </head>
 
 <body>
@@ -37,8 +36,17 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand main_logo" href="index.html"> <img src="{{ asset('img/MEG22.png')}}" style="margin-left:30em ;" width="20%" height="20%" alt="logo"> </a>
-                        <a class="navbar-brand single_page_logo" href="index.html"> <img src="{{ asset('img/MEG22.png')}}" style="margin-left:30em ;" width="20%" height="20%" alt="logo"></a>
+                        <div style="margin-left:20em ;" >
+                            <a class="navbar-brand main_logo" href="{{url('/')}}"> <img src="{{ asset('img/MEG22.png')}}"alt="logo"> </a>
+                        </div>
+
+                        <div style="margin-left:2em ;" >
+                            <a href="#"  class="d-none d-sm-block btn_1 home_page_btn" >تسجيل الدخول</a>
+                        </div>
+
+                        <div >
+                            <a href="#"  class="d-none d-sm-block btn_1 home_page_btn" >تسجيل حساب </a>
+                        </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -46,14 +54,14 @@
                         </button>
 
                         <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
-                            <ul class="navbar-nav ml-2">
+                            <ul class="navbar-nav ml-1" style="">
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">عقاراتى</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">الخدمات</a>
                                 </li>
-                              
+
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">الاشعارات</a>
                                 </li>
@@ -71,7 +79,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="d-none d-sm-block btn_1 home_page_btn">تسجيل الدخول</a>
                     </nav>
                 </div>
             </div>
@@ -90,9 +97,9 @@
             <div class="row">
                 <div class="col-sm-8 col-md-4 col-lg-4">
                     <div class="single_footer_part">
-                        <a href="index.html" class="footer_logo_iner"> <img src="img/footer_logo.png" alt="#"> </a>
+                        <a href="index.html" class="footer_logo_iner"> <img src="{{ asset('img/MEG22.png')}}" width="50%" alt="logo"> </a>
                         <p>Gathered. Under is whose you'll to make years is mat lights thing together fish made
-                            forth thirds cattle behold won't. Fourth creeping first female.
+                            forth thirds cattle behold won't. Fourth creeping first female
                         </p>
                     </div>
                 </div>

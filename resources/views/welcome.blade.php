@@ -327,3 +327,4 @@
         </div>
     </section>
     <!--::client logo part end::-->
+    @endsection
