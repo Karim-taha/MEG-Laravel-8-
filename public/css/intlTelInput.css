@@ -1,6 +1,9 @@
 .iti {
   position: relative;
   display: inline-block; }
+  #phone{
+    width: 400px;
+  }
   .iti * {
     box-sizing: border-box;
     -moz-box-sizing: border-box; }

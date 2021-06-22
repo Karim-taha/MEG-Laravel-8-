@@ -55,36 +55,7 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'birthday' => ['required', 'date', 'min:8'],
-            'government' => ['required', Rule::in([
-                'Alexandria',
-                'Aswan',
-                'Asyut',
-                'Beheira',
-                'Beni Suef',
-                'Cairo',
-                'Dakahlia',
-                'Damietta',
-                'Faiyum',
-                'Gharbia',
-                'Giza',
-                'Ismailia',
-                'Kafr El Sheikh',
-                'Luxor',
-                'Matruh',
-                'Minya',
-                'Monufia',
-                'New Valley',
-                'North Sinai',
-                'Port Said',
-                'Qalyubia',
-                'Qena',
-                'Red Sea',
-                'Sharqia',
-                'Sohag',
-                'South Sinai',
-                'Suez',
-              ]),],
+           
         ]);
     }
 
@@ -101,11 +72,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-        Student::create([
-            'birthday'=> $data["birthday"],
-            'government'=> $data["government"],
-            'user_id'=>$newUserData["id"]
-        ]);
+       
         return $newUserData;
     }
 }
