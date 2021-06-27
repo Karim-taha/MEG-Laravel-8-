@@ -41,11 +41,11 @@
                         </div>
 
                         <div style="margin-left:2em ;" >
-                            <a href="#"  class="d-none d-sm-block btn_1 home_page_btn" >تسجيل الدخول</a>
+                            <a href="{{ route('login') }}"  class="d-none d-sm-block btn_1 home_page_btn" >تسجيل الدخول</a>
                         </div>
 
                         <div >
-                            <a href="#"  class="d-none d-sm-block btn_1 home_page_btn" >تسجيل حساب </a>
+                            <a href="{{ route('register') }}"  class="d-none d-sm-block btn_1 home_page_btn" >تسجيل حساب </a>
                         </div>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
