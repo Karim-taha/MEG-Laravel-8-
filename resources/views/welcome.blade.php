@@ -13,12 +13,9 @@
                 <div class="col-lg-6">
                     <div class="banner_text">
                         <div class="banner_text_iner">
-                            <h1>Building Networks
-                                For People</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim ad minim veniam.</p>
-                            <a href="#" class="btn_2">try for free</a>
+                            <h1>موقع العقارى الاول</h1>
+                            <p class="text-dark">يقدم ام اي جى الكثير من الخدمات منها خدمة الأخبار العقارية، مدونات لتطوير وبناء المنازل،، وبالطبع خدمة عرض العقارات سواء للإيجار أو البيع.</p>
+                            <a href="#" class="btn_2">اعرف اكثر   </a>
                         </div>
                     </div>
                 </div>
@@ -41,10 +38,8 @@
                     <div class="single_feature">
                         <div class="single_feature_part">
                             <img src="{{ asset('img/icon/feature_icon_1.png')}}" alt="">
-                            <h4>Fully Secured</h4>
-                            <p>Made great fish shall beast, fourth land also Doesn
-                                tree without lesser likeness he fruit of called gathering
-                                day whose called were have </p>
+                            <h4>الامان</h4>
+                            <p>الامان </p>
                         </div>
                     </div>
                 </div>
